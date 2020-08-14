@@ -10,6 +10,7 @@ export { PerformanceGeography }  from './performance-geography';
 export { PerformanceHero }       from './performance-hero';
 export { PerformanceHighlights } from './performance-highlights';
 export { PerformanceStats }      from './performance-stats';
+export { PerformanceTable }      from './performance-table';
 export { PhilosophyDouble }      from './philosophy-double';
 export { Portfolio }             from './portfolio';
 export { PostList }              from './post-list';
