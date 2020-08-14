@@ -49,13 +49,13 @@ export const Header = (props) => {
       </div>
 
       <style jsx global>{`
-
         @media (min-width: 1280px) {
           .site-header nav li {
             margin: 0 48px;
           }
         }
       `}</style>
+
       <style jsx>{`
         .site-header {
           position: fixed;
