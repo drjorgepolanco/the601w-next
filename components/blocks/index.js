@@ -36,6 +36,8 @@ export const Blocks = (props) => {
       case 'ow-blocks/the601w-case-hero':
         return <Block601w.CaseHero { ...props } key={ key } block={ block } />
 
+      case 'ow-blocks/the601w-contact':
+        return <Block601w.Contact { ...props } key={ key } block={ block } />
       case 'ow-blocks/the601w-cta':
         return <Block601w.CTA { ...props } key={ key } block={ block } />
 

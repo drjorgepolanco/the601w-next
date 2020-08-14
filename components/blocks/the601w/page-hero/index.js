@@ -30,12 +30,6 @@ export const PageHero = (props) => {
           max-width: 550px;
           margin: 0 auto;
         }
-        // @media (min-width: 1024px) {
-        //   .group {
-        //     position: relative;
-        //     top: -32px;
-        //   }
-        // }
       `}</style>
       <style jsx global>{`
         @media (max-width: 1023px) {

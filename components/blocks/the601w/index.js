@@ -1,6 +1,7 @@
 export { Building }              from './building';
 export { CaseContent }           from './case-content';
 export { CaseHero }              from './case-hero';
+export { Contact }               from './contact';
 export { CTA }                   from './cta';
 export { HomeDouble }            from './home-double';
 export { HomeHero }              from './home-hero';

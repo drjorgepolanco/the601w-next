@@ -32,7 +32,7 @@ export const Header = (props) => {
   return (
     <header id="masthead" className={ `site-header ${headerIsVisible}` }>
       <div className="toolbar">
-        <nav className={ `inner ${classes.max_width_1680}` }>
+        <nav className="inner header-inner">
           <div className="bg">
             <div className={`logo ${classes.align_y}` }>
               <Logo />
@@ -48,21 +48,83 @@ export const Header = (props) => {
         </nav>
       </div>
 
+      <style jsx global>{`
+        @media (min-width: 1280px) {
+          .site-header nav li {
+            margin: 0 48px;
+          }
+        }
+      `}</style>
+
       <style jsx>{`
         .site-header {
           position: fixed;
           top: 0;
           width: 100%;
-          height: 128px;
+          height: 100px;
           z-index: 3;
           transition: all 0.3s ease-in-out;
         }
+        .header-inner {
+          max-width: 1140px;
+          margin: 0 auto;
+        }
+        @media (min-width: 1366px) {
+          
+          .header-inner {
+            max-width: 1170px;
+          }
+        }
+        @media (min-width: 1440px) {
+          
+          .header-inner {
+            max-width: 1200px;
+          }
+        }
+        @media (min-width: 1680px) {
+          
+          .header-inner {
+            max-width: 1300px;
+          }
+        }
+        @media (min-width: 1920px) {
+          
+          .header-inner {
+            max-width: 1380px;
+          }
+        }
+        @media (min-width: 2136px) {
+          
+          .header-inner {
+            max-width: 1460px;
+          }
+        }
+        @media (min-width: 2400px) {
+          
+          .header-inner {
+            max-width: 1600px;
+          }
+        }
+        
+        
         .logo {
-          width: 160px;
+          width: 140px;
           left: 20px;
           z-index: 4;
           transition: all 0.3s ease-in-out;
         }
+        @media (min-width: 768px) {
+          .logo {
+            left: 32px;
+          }
+        }
+        @media (min-width: 1024px) {
+          .logo {
+            left: 48px;
+          }
+        }
+
+
         .site-header.is-visible {
           background: #223655;
           height: 80px;
@@ -81,6 +143,7 @@ export const Header = (props) => {
           position: relative;
           height: 100%;
         }
+        
         @media (max-width: 1023px) {
           .wrap-burger {
             cursor: pointer;
