@@ -18,7 +18,7 @@ export const PageHero = (props) => {
                 <div className="text group">
                   { (text_title)    && <h2 className={ classes.text_title }>{ text_title }</h2> }
                   { (text_subtitle) && <h4 className={ classes.text_subtitle }>{ text_subtitle }</h4> }
-                  { (text_body)     && <p className={ classes.text_body }>{ text_body }</p> }
+                  { (text_body)     && <p className={ classes.text_body } dangerouslySetInnerHTML={{ __html: text_body }} /> }
                 </div>
               </div>
             </div>
@@ -61,6 +61,10 @@ export const PageHero = (props) => {
             top: auto;
             left: auto;
             position: relative;
+          }
+          .page-hero a {
+            color: white;
+            text-decoration: underline;
           }
         }
       `}</style>
