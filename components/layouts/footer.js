@@ -43,7 +43,7 @@ export const Footer = (props) => (
         width: 100%;
         max-width: 132px;
         display: block;
-        margin: 0 auto;
+        margin: 0;
       }
       .wrap-logo img {
         display: block;
