@@ -347,7 +347,7 @@
     padding: 12px 0;
   }
   a {
-    @include font_size_p_md;
+    @include font_size_p_sm;
   }
   @include tablet_ls {
     padding: 12px 0;
@@ -654,6 +654,70 @@
     font-size: 40px;
   }
 }
+
+
+
+
+
+/* Performance Table */
+
+.table_flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.table_cell {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 16px 8px;
+  flex: 0 0 14.28%;
+}
+
+
+
+.phablet_up {
+  display: none;
+}
+@media (min-width: 414px) {
+
+  .phablet_up {
+    display: block;
+  }
+}
+
+
+.tablet_pt_up {
+  display: none;
+}
+@media (min-width: 768px) {
+
+  .tablet_pt_up {
+    display: block;
+  }
+}
+
+
+.tablet_ls_up {
+  display: none;
+}
+@media (min-width: 1024px) {
+
+  .tablet_ls_up {
+    display: block;
+  }
+}
+
+
+.tablet_laptop {
+  display: none;
+}
+@media (min-width: 1280px) {
+
+  .laptop_up {
+    display: block;
+  }
+}
+
 
 
 
