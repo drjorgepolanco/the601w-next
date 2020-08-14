@@ -9,7 +9,7 @@ export const BlockHeader = (props) => {
   return (
     <FmtBlock attr={ settings } attrName={ 'settings' }>
       <wMrkp.BuildingsHeader>
-        <h2 className={ classes.building_header_title } dangerouslySetInnerHTML={{ __html: single.title.rendered }} />
+        <h3 className={ classes.building_header_title } dangerouslySetInnerHTML={{ __html: single.title.rendered }} />
         <p className={ classes.building_header_subtitle }>
           { wData.location[settings.w_city] }
         </p>
