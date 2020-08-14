@@ -137,8 +137,8 @@ export const BlockBody = (props) => {
         // Landscape
 
         .landscape .wrap-img {
-          height: 100vw;
-          max-height: calc(100vh - 240px);
+          height: 75vw;
+          // max-height: calc(100vh - 240px);
         }
 
 
